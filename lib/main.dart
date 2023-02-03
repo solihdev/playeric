@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ui/audio/audio_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -6,12 +7,14 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Playeric',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Container(),
+      home: const AudioPage(),
     );
   }
 }
